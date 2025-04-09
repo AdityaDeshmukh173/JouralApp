@@ -1,4 +1,4 @@
-//package com.adityaprojectcompany.journalApp;
+//package com.adityaprojectcompany.journalApp.service;
 //
 //import com.adityaprojectcompany.journalApp.Entity.User;
 //import com.adityaprojectcompany.journalApp.Repository.UserRepository;

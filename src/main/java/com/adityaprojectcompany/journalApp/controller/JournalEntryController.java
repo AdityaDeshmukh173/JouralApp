@@ -52,7 +52,7 @@ public class JournalEntryController {
 
     }
 
-    @GetMapping("id/{myId}")
+    @GetMapping("/id/{myId}")
     public ResponseEntity<JournalEntry> getJournalEntryById(@PathVariable ObjectId myId){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userName = authentication.getName();
@@ -68,7 +68,7 @@ public class JournalEntryController {
         return new ResponseEntity<>(HttpStatus.NOT_FOUND) ;
     }
 
-    @DeleteMapping("id/{myId}")
+    @DeleteMapping("/id/{myId}")
     public ResponseEntity<?> deleteJournalEntryById(@PathVariable ObjectId myId){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userName = authentication.getName();
@@ -81,7 +81,7 @@ public class JournalEntryController {
 
     }
 
-    @PutMapping("id/{myId}")
+    @PutMapping("/id/{myId}")
     public ResponseEntity<?> updateJournalById(@PathVariable ObjectId myId, @RequestBody JournalEntry newEntry){
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String userName = authentication.getName();
